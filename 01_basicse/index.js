@@ -46,8 +46,13 @@
     time:"10am-8pm"
  }
 
+const arrs=['Md Ranju',20,"Progmaming"]
+
+const [name,age,work]=arrs
 
 
+ const {name:myNaneIsRanju}=obj3
+ console.log(name,age,work);
 //  const allOjb=[
 //     obj,obj2,obj3
 //  ]
