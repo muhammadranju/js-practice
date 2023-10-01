@@ -1,29 +1,29 @@
-// console.log("Hello wordl");
-// const fristName="Md"
-// const lastName="Ranju"
+console.log("Hello wordl");
+const fristName="Md"
+const lastName="Ranju"
 
-// console.log(fristName.concat(' ',lastName));
-
-
-
-// const myName=['MD',"Ranju","Amin"]
-// const myName2=['Muhammad', "Ranju",'Ranju']
-
-// const allName=myName.concat(myName2)
-// console.log(allName);
-
-// const allName2=[...myName, ...myName2]
-// console.log(allName2);
+console.log(fristName.concat(' ',lastName));
 
 
-// console.log(Array.isArray('Md Ranju'));
-// console.log(Array.from({ }));
 
-// let score1=100
-// let score2=200
-// let score3=300
+const myName=['MD',"Ranju","Amin"]
+const myName2=['Muhammad', "Ranju",'Ranju']
 
-// console.log(Array.of(score1,score2,score3));
+const allName=myName.concat(myName2)
+console.log(allName);
+
+const allName2=[...myName, ...myName2]
+console.log(allName2);
+
+
+console.log(Array.isArray('Md Ranju'));
+console.log(Array.from({ }));
+
+let score1=100
+let score2=200
+let score3=300
+
+console.log(Array.of(score1,score2,score3));
 
 
 
@@ -53,12 +53,21 @@ const [name,age,work]=arrs
 
  const {name:myNaneIsRanju}=obj3
  console.log(name,age,work);
-//  const allOjb=[
-//     obj,obj2,obj3
-//  ]
+ const allOjb=[
+    obj,obj2,obj3
+ ]
 
  const spreddObj={...obj, ...obj2,}
 
-//  console.log(spreddObj);
-//  console.log(Object.keys(obj3));
-//  console.log(Object.entries(obj3));
+ console.log(spreddObj);
+ console.log(Object.keys(obj3));
+ console.log(Object.entries(obj3));
+
+
+
+const myJSON={
+   "name":"Md Ranju",
+   "age":20,
+   "work":"Programming"
+}
+console.log(myJSON);
