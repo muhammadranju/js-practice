@@ -36,5 +36,10 @@ const myCoding = [
 ];
 
 myCoding.forEach((items) => {
-  console.log(items.langName, ":", items.langfileName);
+  if (items.langfileName == "js" || items.langfileName == "py") {
+    // return console.log(items.langName);
+  }
+  // return console.log(items.langName, ":", items.langfileName);
 });
+
+const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
