@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Chai aur code</h1>
+  <button id="start">Start</button>
+  <button id="stop">Stop</button>
+
+
+
+
+  <script>
+    const startBtn = document.querySelector('#start')
+    const stopBtn = document.querySelector('#stop')
+    const h1 = document.querySelector('h1')
+
+
+    let i = 1
+    let intervalId;
+    startBtn.addEventListener('click', function() {
+      if (!intervalId) {
+        intervalId = setInterval(timeChange, 1000, "Hi JS")
+      }
+
+      function timeChange(message) {
+        console.log(message, Date.now(), );
+        h1.innerText = `Chai aur code ${i++}`
+      }
+    })
+
+
+    stopBtn.addEventListener('click', function() {
+      clearInterval(intervalId)
+      intervalId = null
+      console.log("Time End", Date.now());
+      h1.innerText = `Chai aur code ${i-1} Time End`
+    })
+  </script>
+</body>
+
+</html>
