@@ -7,8 +7,20 @@ const randomColor = function () {
   return color;
 };
 
-const startChangingColor = () => {};
-const stopChangingColor = () => {};
+let intervalID;
+const startChangingColor = function () {
+  if (!intervalID) {
+    intervalID = setInterval(changeBgColor, 1000);
+  }
+  function changeBgColor() {
+    document.body.style.backgroundColor = randomColor();
+  }
+};
+const stopChangingColor = function () {
+  console.log("STOP");
+  clearInterval(intervalID);
+  intervalID = null;
+};
 
 document.querySelector("#start").addEventListener("click", startChangingColor);
 
